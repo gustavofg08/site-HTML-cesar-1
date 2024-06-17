@@ -17,9 +17,115 @@
             box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.398);
             border-radius: 20px;
         }
+        * {
+            margin: 1px;
+            padding: 1px;
+        }
+        body {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+        }
+        hgroup > h1 {
+            font-size: 36px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+        hgroup a {
+            text-decoration: none;
+            
+        }
+        h1 ~ h2 {
+            margin-top: 14px;
+            margin-bottom: 14px;
+            font-size: 27px;
+            
+        }
+        nav > ul {
+            margin-left: 50px;
+        }
+        nav > ul > li:first-child > a {
+            color: #c60;
+            text-decoration: none;
+        }
+        nav > ul > li:first-child > a:hover {
+            
+            text-decoration: none;
+        } 
+        nav > ul > li:first-child(3) {
+            background: #ccc;
+        } 
+        h1 > a {
+            margin: 12px;
+            text-decoration: none;
+        }
+        .tudo {
+            width: 100%;
+            height: 960px;
+            margin: 0 auto;
+            background: rgb(245, 241, 241);
+        }
+        .topo {
+            width: 100%;
+            line-height: 1;
+            padding: 1px 20px 10px 20px ;
+        }
+        .topo h1 {
+            font-size: 36px; 
+        text-align: right;
+        margin: 4px 40px 2px 0px;
+        }
+        .topo h2 {
+             font-size: 20px;
+             margin: 2px 40px 4px 0;
+             text-align: right;    
+        }
+        nav > ul {
+            width: 100px;
+            margin: 0;
+            padding: 0;
+            background: #900;
+        }
+       
+        
+        html { box-sizing: border-box; }
+        
+        body {
+            font-size: 18px;
+            background: #ddd;
+            color: #333;
+        }
+        .topo a {
+            color: #900;
+            text-decoration: none;
+        }
+        .topo ul li {
+            list-style: none;
+            display: inline;
+        }
+        .topo ul li a {
+            float: left;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            border-right: 1px solid #fff;
+            padding: 10px 20px;
+            color: #fff;
+            background: #900;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .topo ul li:last-child a {
+            border: none;
+        }
+        .topo ul li a:hover {
+            color: #900;
+            background: #ccc;
+        }
     </style>
 </head>
 <body class="home">
+    <div class="tudo">
     <header class="topo">
         <hgroup>
             <h1><a href="/">Site do Paulo</a></h1>
@@ -38,5 +144,6 @@
 <footer class="rodapé">
     
 </footer>
+</div>
 </body>
 </html>
