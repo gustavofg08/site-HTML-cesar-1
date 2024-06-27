@@ -9,14 +9,7 @@
             color: blue;
             text-decoration: none;
         }
-        a:hover {
-            transform: scale(1.08);
-            text-decoration: none;
-            display: inline-block;
-            transition: .2s;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.398);
-            border-radius: 20px;
-        }
+       
         * {
             margin: 1px;
             padding: 1px;
@@ -33,31 +26,34 @@
         }
         hgroup a {
             text-decoration: none;
-            
         }
         h1 ~ h2 {
             margin-top: 14px;
             margin-bottom: 14px;
             font-size: 27px;
-            
         }
         nav > ul {
-            margin-left: 50px;
+            margin-left: 0;
+            padding: 0;
+            text-align: center;
         }
-        nav > ul > li:first-child > a {
-            color: #c60;
-            text-decoration: none;
+        nav > ul > li {
+            list-style: none;
+            display: inline-block;
         }
-        nav > ul > li:first-child > a:hover {
-            
+        nav > ul > li > a {
             text-decoration: none;
-        } 
-        nav > ul > li:first-child(3) {
+            text-transform: uppercase;
+            padding: 10px 20px;
+            color: #fff;
+            background: #900;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        nav > ul > li > a:hover {
+            color: #900;
             background: #ccc;
-        } 
-        h1 > a {
-            margin: 12px;
-            text-decoration: none;
         }
         .tudo {
             width: 100%;
@@ -68,82 +64,65 @@
         .topo {
             width: 100%;
             line-height: 1;
-            padding: 1px 20px 10px 20px ;
+            padding: 1px 20px 10px 20px;
+            text-align: center;
         }
         .topo h1 {
-            font-size: 36px; 
-        text-align: right;
-        margin: 4px 40px 2px 0px;
+            font-size: 36px;
+            text-align: center;
+            margin: 4px 40px 2px 0px;
         }
         .topo h2 {
-             font-size: 20px;
-             margin: 2px 40px 4px 0;
-             text-align: right;    
+            font-size: 20px;
+            margin: 2px 40px 4px 0;
+            text-align: center;
         }
-        nav > ul {
-            width: 100px;
-            margin: 0;
-            padding: 0;
-            background: #900;
-        }
-       
-        
         html { box-sizing: border-box; }
-        
         body {
             font-size: 18px;
             background: #ddd;
             color: #333;
         }
         .topo a {
-            color: #900;
+            
             text-decoration: none;
         }
-        .topo ul li {
-            list-style: none;
-            display: inline;
+        .sites {
+            color: rgb(116, 213, 245);
         }
-        .topo ul li a {
-            float: left;
+        #li:hover{
+            border-radius: 20px;
+            transform: scale(1.08);
             text-decoration: none;
-            text-transform: uppercase;
-            text-align: center;
-            border-right: 1px solid #fff;
-            padding: 10px 20px;
-            color: #fff;
-            background: #900;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        .topo ul li:last-child a {
-            border: none;
-        }
-        .topo ul li a:hover {
-            color: #900;
-            background: #ccc;
+            display: inline-block;
+            transition: .2s;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.398);
         }
     </style>
 </head>
 <body class="home">
     <div class="tudo">
-    <header class="topo">
-        <hgroup>
-            <h1><a href="/">Site do Paulo</a></h1>
-            <h2>Site destinado a divulgar o trabalho de Paulo na criação do sites</h2>
-        </hgroup>
-    <nav>
-        <ul>
-            <li><a href="home.hmtl" class="corrente">Home</a></li>
-            <li><a href="portifólio.html">Portifólio</a></li>
-            <li><a href="artigos-html.html">Artigos HTML</a></li>
-            <li><a href="artigos-css.html">CSS</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-<footer class="rodapé">
-    
-</footer>
-</div>
+        <header class="topo">
+            <hgroup>
+                <h1><a href="/" class="sites">Site do Paulo</a></h1>
+                <h2>Site destinado a divulgar o trabalho de Paulo na criação do sites</h2>
+            </hgroup>
+            <nav>
+                <ul>
+                    <li><a href="home.html" class="corrente" id="li">Home</a></li>
+                    <li><a href="portifólio.html" id="li">Portifólio</a></li>
+                    <li><a href="artigos-html.html"id="li">Artigos HTML</a></li>
+                    <li><a href="artigos-css.html"id="li">CSS</a></li>
+                    <li><a href="contato.html"id="li">Contato</a></li>
+                </ul>
+            </nav>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae alias itaque facere at sed. Id odit quod illum et perferendis dolore eum vitae fugit quibusdam esse corporis, sint ad consectetur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, consectetur! Adipisci fugit nisi quae ipsam, et ab in temporibus accusantium iste officia libero tempora delectus rem voluptatum vel id explicabo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsum accusamus, eum sed aliquam voluptas molestiae, saepe odit amet perspiciatis voluptates soluta consectetur tenetur excepturi eaque dolore sequi architecto quo.</p>
+        </header>
+        <footer class="rodapé">
+            
+        </footer>
+    </div>
 </body>
 </html>
