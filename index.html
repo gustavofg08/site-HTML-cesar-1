@@ -5,66 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Copa do Mundo 2014</title>
     <style>
-*/
- body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, ul, li, article, main, footer, header, nav, section {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100px;
-font: inherit;
-vertical-align: baseline;
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+a, ul, li, article, main, footer, header, nav, section {
+margin: 0; padding: 0;
+border: 0 ; font-size: 100px;
+font: inherit; vertical-align: baseline;      
 }
+ 
 body {
-font: 80%/1.6 sans-serif;
+    font: 62.5%/1.4  verdana,sans-serif;
 }
-.tudo {
-width: 100%; max-width: 940px; margin: 0 auto;
-}
-.tudo, header, nav, section, footer {
-    border: 1px solid #000;
-}
-header, footer {
-    height: 5em; background-color: #bae8ca;
-}
-nav, .busca {
-    height: 2em; background-color: #ccffed;
-}
-.busca {
-    background-color: #ebffcc;
-}
-.slideshow {
-    height: 10em; background-color: #e4e4e4;
-}
-.noticias {
-    height: 10em; background-color: #d9ffdc;
-}
-.informações {
-    height: 10em; background-color:#c6e8ba ;
-}
+.tudo {width: 100%; max-width: 940px; margin: 0 auto;}
+ 
+.tudo, header, nav, section, footer {border: 1px solid black;}
+header, footer {height: 5em; background: #bae8ca;}
+nav, .busca {height: 2em; background: #ccffed;}
+.busca {background: #ebffcc;}
+.slide-show {height: 10em; background: #e4e4e4;}
+.noticias {height: 10em; background: #d9ffdc;}
+.informacoes {height: 10em; background: #c6e8ba;}
+ 
 header {
-    height: 5.6em;
-    background-image: url(https://i.imgur.com/DDYPzjp.png), url(https://i.imgur.com/689qLVt.jpeg);
-    background-position: center, center;
-    background-repeat:no-repeat, repeat;
+height: 5.6em;
+background:#030;
+background-image: url(https://i.imgur.com/DDYPzjp.png), url(https://i.imgur.com/689qLVt.jpeg);
+background-position: center, center; background-repeat: no-repeat, repeat;
 }
+ 
 header h1{
-    color: #00000000;
+text-indent:-99999px;
 }
+article, main, footer, header, nav, section{
+display: block;
+}
+ul{
+    list-style: none;
+}
+*:before,
+*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+.cf:before,
+.cf:after{
+    content: " ";
+    display: table;
+}
+.cf:after {
+clear: both;
+}
+.nav {
+    position: relative;
+    z-index: 99999;
+    background-color: #00b7f0;
+    height: 4em;
+    font-weight: bold;
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    margin-right: 0.5em;
+    margin-top:0.7em;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.nav a {
+    padding: 0.5em 1.2em;
+    text-decoration: none;
+    color: #fff;
+   
+}
+.nav a:hover {
+    background: #e2a618;
+    color: #333;
+    border-radius: 0.4em;
+}
+.nav .current a {
+    cursor:default;
+    background: #e2a618;
+    color: #333;
+    border-radius: 0.4em;
+}
+.nav.center ul {
+    text-align: center;
+}
+ 
+@media screen and (max-width: 680px) {
+.nav {
+    position: relative;
+    padding-top:0.3em;
+}  
+.nav li {
+    background:#00b7f0;
+    display: none;
+    margin: 0;
+}
+.nav .current {
+    display: block;
+}
+.nav .current a:after {
+    content: "\2630";
+    position:absolute;
+    right:0.2em;
+    top:0;
+    font-size:2em;
+    color: #fff;
+}
+.nav a {
+    display: block;
+    padding: 0.5em 0.5em 0.5em 1em;
+    text-align: left;
+}
+.nav .current a {
+    width: 5.6em;
+    margin-left: 0.5em;
+}
+.nav ul:hover li {
+    border-bottom:1px solid #aedce9;
+    display: block;
+    margin: 0;
+}
+    }  
 </style>
 </head>
 <body id="home">
+
     <div class="tudo">
-        <header>
-            <h1>Portal da Copa 2014</h1>
-        </header>
-        <nav>Navegação</nav>
-        <div class="busca"></div>
-        <main>
-            <section class="slideshow">slide show</section>
-            <div class="noticias">Noticias</div>
-            <div class="informações">Informações</div>
-        </main>
-            <footer>Rodapé</footer>
-    </div>
-</body>
+
+    <header>
+
+    <h1>Portal da Copa 2014</h1>
+
+    </header>
+
+<nav class="nav center">
+
+    <ul>
+
+        <li class="current"><a href="#">home</a></li>
+
+        <li><a href="#">Estdios/Sedes</a></li>
+
+        <li><a href="#">Calendário</a></li>
+
+        <li><a href="#">Destaques</a></li>
+
+        <li><a href="#">Notícias</a></li>
+
+    </ul>
+
+</nav>
+
+    <nav>NAVEGAÇÃO</nav>
+
+    <div class="busca">BUSCA</div>
+
+    <main>
+
+    <section class="slide-show">SLIDE SHOW</section>
+
+    <div class="noticias">NOTÍCIAS</div>
+
+    <div class="informacoes">INFORMAÇÕES</div>
+
+    </main>
+
+    <footer>RODAPE</footer>
+
+    <p style="color:#c30; font-size:1.4em ;">Essa é a pagina pronta, após a
+
+        edição do arquivo etapatresnavegacao.html.
+
+        Nesse arquivo, criamos a barra de navegação do site que está localizada
+
+        logo abaixo do topo.
+
+    </p>
+
+</div>
+
+    </body>
 </html>
